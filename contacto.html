@@ -54,8 +54,27 @@
                     name="passCampo"
                 >
             </div>
-            <button class="btn btn-primary w-100" type="submit">
+            <div class="mb-3">
+              <input 
+                type="checkbox"
+                name="checkCampo"
+                id="checkbox"
+                class="form-check-input"
+                >
+                <label for="checkbox" class="form-check-label">aceptar terminos</label>
+            </div>
+            <button id="btn-enviar" class="btn btn-primary w-100" type="submit">
                 Enviar
+            </button>
+
+            <button
+              id="btn-cargando"
+              class="btn btn-secondary w-100"
+              type="button"
+              disabled
+            >
+            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+            Cargando...
             </button>
         </form>
    
