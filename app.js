@@ -23,6 +23,11 @@ formulario.addEventListener('submit', e => {
     window.setTimeout(() => {
         btnEnviar.classList.remove('d-none');
         btnCargando.classList.add('d-none');
+
+        const eventoToast = new bootstrap.Toast(toast);
+        
+        eventoToast.show();
+
     }, 3000);
 
     formulario.reset();
